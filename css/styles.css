@@ -359,12 +359,19 @@ img {
     margin-top: 8px;
 }
 
-.card-social-item {
+.card-social-link {
+    width: 40px;
+    height: 40px;
     background-color: #4d5ae5;
-    padding: 12px;
     border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     fill: #F4F4FD;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .card-social-svg {
@@ -373,7 +380,7 @@ img {
     height: 16px;
 }
 
-.card-social-item:hover {
+.card-social-link:hover {
     background-color: #404bbf;
 }
 
@@ -500,14 +507,19 @@ img {
     gap: 16px;
 }
 
-.footer-social-item {
+.footer-social-link {
     background-color: #4D5AE5;
     border-radius: 50%;
-    padding: 8px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: #F4F4FD;
 }
 
-.footer-social-item:hover {
+.footer-social-link:hover {
     background-color: #31D0AA;
 }
 
@@ -515,7 +527,6 @@ img {
     display: block;
     width: 24px;
     height: 24px;
-    fill: #F4F4FD;
 }
 
 .footer-social-media {
@@ -530,4 +541,5 @@ img {
 .container-footer {
     display: flex;
     gap: 120px;
+    align-items: baseline;
 }
